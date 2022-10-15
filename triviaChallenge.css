@@ -1,0 +1,709 @@
+        :root{
+            --primary-color: darkslategray; 
+            --secondary-color: rgb(255, 255, 255); 
+            --secondary-primary-color: rgb(247, 148, 29); 
+            --secondary-secondary-color: rgb(39, 169, 255);
+            --extra-primary: rgba(114, 102, 88, 0.507);
+            --extra-primary-secondary: rgb(239, 66, 54); 
+            --extra-secondary-secondary: rgb(255, 220, 23); 
+        }
+        body{
+            background-color: var(--primary-color);
+        }
+
+        
+.mobile-container{
+    display: grid;
+    grid-template-areas: 
+    "posH posH posH posH posH posH"
+    "pos4 pos4 pos4 pos4 pos4 pos4"
+    "pos5 pos5 pos5 pos5 pos5 pos5"
+    "pos6 pos6 pos6 pos6 pos6 pos6"
+    "pos19 pos19 pos19 pos19 pos19 pos19"
+    "pos20 pos20 pos20 pos20 pos20 pos20"
+    "pos21 pos21 pos21 pos21 pos21 pos21"
+    "pos7 pos7 pos7 pos7 pos7 pos7"
+    "pos8 pos8 pos8 pos8 pos8 pos8"
+    "pos9 pos9 pos9 pos9 pos9 pos9"
+    "pos10 pos10 pos10 pos10 pos10 pos10"
+    "pos11 pos11 pos11 pos11 pos11 pos11"
+    "pos12 pos12 pos12 pos12 pos12 pos12"
+    "pos16 pos16 pos16 pos16 pos16 pos16"
+    "pos17 pos17 pos17 pos17 pos17 pos17"
+    "pos18 pos18 pos18 pos18 pos18 pos18"
+    "pos14 pos14 pos14 pos14 pos14 pos14"
+    "pos15 pos15 pos15 pos15 pos15 pos15"
+    "f5 f5 f5 f5 f5 f5";
+    border: solid;
+    margin: auto 5px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 8px;
+}
+.item{
+    height: 100%;
+    padding-top: 10px; 
+}
+.pos1{
+    grid-area: pos1;
+}
+.pos3{
+    display: none;
+    grid-area: pos3;
+    background-color: rgb(238, 238, 238);
+    border-radius: 0 0 10px 10px;
+}
+.pos4{
+    margin-top: 20px;
+    grid-area: pos4;
+}
+.pos5{
+    margin-top: 20px;
+    text-align: center;
+    grid-area: pos5;
+}
+.pos6{
+    margin-top: 20px;
+    grid-area: pos6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pos7{
+    margin: 20px 5px 5px 5px;
+    grid-area: pos7;
+    text-align: center;
+}
+.pos8{
+    margin: 20px 5px 5px 5px;
+    grid-area: pos8;
+    text-align: center;
+}
+.pos9{
+    margin: 20px 5px 5px 5px;
+    text-align: center;
+    grid-area: pos9;
+}
+.pos10{
+    margin-top: 20px;
+    text-align: center;
+    grid-area: pos10;
+}
+.pos11{
+    margin-top: 20px;
+    text-align: center;
+    grid-area: pos11;
+}
+.pos12{
+    margin-top: 20px;
+    display: none;
+    grid-area: pos12;
+}
+.pos13{
+    margin-top: 20px;
+    grid-area: pos13;
+}
+.pos14{
+    text-align: center;
+    margin-top: 20px;
+    grid-area: pos14;
+    display: none;
+}
+.pos15{
+    display: none;
+    margin-top: 20px;
+    grid-area: pos15;
+    text-align: center;
+    position: relative;
+    bottom: 100px; 
+}
+.pos16{
+    margin-top: 20px;
+    grid-area: pos16;
+    display: flex;
+}
+.pos17{
+    margin-top: 20px;
+    grid-area: pos17;
+}
+.pos18{
+    margin-top: 20px;
+    grid-area: pos18;
+}
+.pos19{
+    margin-bottom: 40px;
+    grid-area: pos19;
+    text-align: center;
+    display: none;
+}
+.pos20{
+    margin-top: 20px;
+    text-align: center;
+    grid-area: pos20;
+}
+.pos21{
+    margin-top: 20px;
+    text-align: center;
+    grid-area: pos21;
+}
+.linkText{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color:rgb(142, 142, 142);
+}
+.headerImage{
+    width: 80%;
+    display: block;
+    margin: auto; 
+}
+.thumbUp{
+    position: relative;
+    top: 5px;
+    height: 45px;
+    padding-right: 20px;
+}
+.thumbDown{
+    position: relative;
+    top: 2px;
+    height: 45px;
+    padding-left: 20px;
+}
+.linkButton{
+    position: relative;
+    border-radius: 30px;
+    border: solid 4px rgb(168, 167, 167);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.671);
+    background-color: blue;
+    background-image: linear-gradient(rgb(61, 87, 202), rgb(49, 66, 151));
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    color:rgb(255, 254, 254);
+    box-shadow: 1px 1px 2px 1px black inset, -1px -1px 2px 1px black inset;
+    margin: 40px;
+    width: 40%;
+}
+.linkButton:hover{
+    border: solid 4px rgb(92, 89, 89);
+    color: rgb(255, 255, 255);
+}
+.linkButton:active{
+    position: relative;
+    box-shadow: 4px 4px 5px 4px black inset;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.719);
+}
+.linkButtonRed{
+    position: relative;
+    border-radius: 30px;
+    border: solid 4px rgb(168, 167, 167);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.671);
+    background-color: rgb(255, 0, 0);
+    background-image: linear-gradient(rgb(202, 61, 61), rgb(151, 49, 49));
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    color:rgb(255, 254, 254);
+    box-shadow: 1px 1px 2px 1px black inset, -1px -1px 2px 1px black inset;
+    margin: 40px;
+    width: 40%;
+}
+.linkButtonRed:hover{
+    border: solid 4px rgb(92, 89, 89);
+    color: rgb(255, 255, 255);
+}
+.linkButtonRed:active{
+    position: relative;
+    box-shadow: 4px 4px 5px 4px black inset;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.719);
+}
+.numberWrongText{
+    position: relative;
+    color: rgb(88, 87, 87);
+    font-style: italic;
+    font-size: 22px;
+}
+.numberWrongBox{
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    color: red;
+    font-size: 20px;
+}
+.areYouSure{
+    color: rgb(255, 0, 0);
+    font-style: italic;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px; 
+
+}
+.tyrAgain{
+    color: rgb(54, 54, 54);
+    font-style: italic;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.questionNumBox{
+    width: 70px;
+    text-align: center;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+}
+.questionNumBox1{
+    width: 70px;
+    text-align: center;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+}
+.question{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold; 
+    color: rgb(45, 45, 45);
+}                                                                                                             /**/
+.box{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    height: 80px;
+}
+.boxInput{
+    position: absolute;
+    left: -1px;
+    top: -5px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+input[type=checkbox]{
+    visibility: hidden;
+}
+.box:hover input ~ .boxInput{
+    border: black 1px solid;
+}
+.box input:checked ~ .boxInput{
+    border: rgb(0, 0, 0) 2px solid;
+    color: rgb(56, 75, 128);
+}
+.checkBox{
+    height: 40px;
+    width: 40px; 
+}                                                                                                              /**/
+.answerText{
+    position: relative;
+    z-index: 2;
+    right: 25px;
+    font-size: 20px;
+    color: rgb(87, 79, 79);
+}
+.answerMimic{
+    color: rgb(66, 65, 65);
+    font-style: italic;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.answerButton{
+    position: relative;
+    cursor: pointer; 
+    height: 50px;
+    width: 200px; 
+    border-radius: 10px;
+    border: black solid 3px;
+    background-color: white; 
+    font-size: 20px;
+}
+.answerButton:active{ 
+    background-color: rgb(43, 251, 54);
+    transform: translateY(3px);
+}
+.answerButton:hover{
+    border: black solid 1px; 
+    font-weight: bold;
+    background-color: rgb(7, 255, 7);
+}
+.buttonPush{
+    position: relative;
+    height: 50px;
+    width: 200px; 
+    border-radius: 10px;
+    border: solid 4px black; 
+    font-size: 20px;
+    background-color: whitesmoke;
+    top: 10px;
+}
+.buttonPush:active{
+    transform: translateY(3px);
+}
+.buttonPush:hover{
+    background-color: rgb(43, 251, 54);
+    border: black 1px solid; 
+    font-weight: bold;
+}
+.checkMark{
+    position: relative;
+    width: 60px;
+    height: 60px; 
+    top: 10px;
+}
+.correctAnswer{
+    position: relative;
+    color: rgb(42, 173, 42);
+    font-size: 30px;
+}
+.wrongAnswer{
+    position: relative;
+    color: rgb(255, 31, 31);
+    font-size: 30px; 
+}
+.redX{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    position: relative; 
+    top: 20px;
+}
+.tryAgain{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(53, 53, 53);
+}
+.formNumberWrongText {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.numberWrongFill {
+    color: red;
+}
+.formNameBox {
+    height: 40px;
+    width: 550px; 
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: solid 2px lightslategrey;
+    cursor: text;
+}
+.formDisplayBlock{
+    display: none;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.numberWrongFill {
+    height: 40px;
+    width: 200px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif; 
+    cursor: not-allowed; 
+    text-align: center;
+    border: none;
+}
+.flexItemItem{
+    margin: 10px;
+}
+.numberWrongFill.hover{
+    border: none;
+}
+.congrats{
+    font-size: 30px; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    color: black;
+}
+.fillOut{
+    font-size: 20px; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    color: black;  
+}
+.firework{
+    width: 70px;
+    height: 70px; 
+    position: relative;
+    top: 20px;
+}
+.downArrow{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 10px; 
+}
+.flex2{
+    margin: 10px;
+}
+.flex1{
+    height: 70px; 
+}
+.formSubmit{
+    border: 3px solid black; 
+    font-size: 20px; 
+    border-radius: 10px; 
+    height: 40px;
+    width: 100px;
+    background-color: white; 
+}
+.formSubmit:hover{
+    background-color: lime;
+    border: 1px solid black; 
+    font-weight: bold;
+}
+.formSubmit:active{
+    transform: translateY(3px); 
+}
+.max20Text{
+    text-align: center;
+    color: black;
+    font-size: 12px;
+}
+.thankYou{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    color: cadetblue;
+}
+.formEndMessage{
+    text-align: center; 
+    grid-area: ending;
+}
+.playAgainReset {
+    position: relative;
+    top: 70px; 
+    border: 3px solid black;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+.playAgainReset:hover{
+    background-color: lime;
+    border: 1px solid black; 
+    font-weight: bold;
+}
+.playAgainReset:active{
+    transform: translateY(3px); 
+}
+.arrowCircle{
+    position: relative;
+    top: 20px; 
+    width: 70px;
+    height: 70px;
+}
+.cImage{
+position: relative;
+top: 8px;
+height: 20px; 
+width: 20px;
+}
+.copyRightText{
+font-size: 8px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: rgb(61, 61, 61);
+}
+.positionHeader{                                /*for header nav bar CSS style*/
+    display: grid;
+    grid-template-areas: 
+    "pos1 pos1 pos1 pos1 pos2"
+    "pos3 pos3 pos3 pos3 pos3";
+    align-items: center;
+    position: sticky; 
+    right: 0; 
+    left: 0;
+    top: 0;
+    z-index: 2; 
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid lightgray;
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    grid-area: posH;
+}
+.posHeaderImg{
+    cursor: pointer; 
+    margin: 5px 20px;
+    color: var(--primary-color); 
+    padding-bottom: 5px;
+} 
+.header{
+    font-size: x-large;     
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 5px;
+}
+.fa-bars{
+    cursor: pointer;
+    color: black;
+}  
+.fa-x{
+    cursor: pointer;
+    color: black;
+}
+.pos1{
+    grid-area: pos1; 
+    padding: 10px 30px;
+    text-align: start;
+} 
+.pos2{
+    grid-area: pos2; 
+    text-align: end;
+    padding-right: 40px;
+} 
+.pos3{
+    grid-area: pos3;
+}
+.gameListText{
+    cursor: pointer; 
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-weight: normal;
+    font-size: 30px; 
+}
+.gameListTextHome{
+    cursor: pointer; 
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-weight: normal;
+    font-size: 30px; 
+    position: relative; 
+    top: 20px; 
+}
+.gameListGame{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-weight: normal; 
+    font-size: 30px;
+}
+.hiddenMenu{
+    text-align: start;
+    flex-direction: column;
+    display: none; 
+    overflow-x: hidden;
+    overflow-y: scroll; 
+    padding-left: 40px;
+    border-bottom: 1px solid lightgray;
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    -ms-overflow-style: none;  /* IE and Edge stops scroll bar*/
+    scrollbar-width: none;  /* Firefox stops scroll bar*/ 
+    z-index: 2;
+}
+.hiddenMenu::-webkit-scrollbar { /*hides the scroll bar on selected element.*/
+    display: none;
+}
+details > summary{  /*gets rid of the details list arrow*/
+    list-style: none;
+}
+details > summary::-webkit-details-marker { /*gets rid of the details list arrow*/
+    display: none;
+}
+.navDetails{
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.gameItem{
+    padding-left: 40px;
+} 
+#detailsArrow{
+    height: 50px;
+    width: 70px; 
+    position: relative;
+    left: 15px;
+    color: rgb(150, 81, 2); 
+}
+.questions{
+    position: relative;
+    bottom: 10px;
+}
+.hourglass{
+    padding-left: 20px;
+    color: var(--primary-color);
+}
+.robot{
+    padding-left: 20px;
+    color: firebrick;
+}                                                                                  /*  */
+a {
+    text-decoration: none;
+}
+.f5{
+    background-color: transparent;
+    grid-area: f5; 
+    text-align: center;
+}
+.footerText{
+    color: var(--extra-primary);
+}
+.privacyText:hover{
+    color: var(--primary-color)
+}
+/* @media screen and (max-width: 900px){
+    .mobile-container{
+        grid-template-areas: 
+        "posH posH posH posH posH posH"
+        "pos4 pos4 pos4 pos4 pos4 pos4"
+        "pos5 pos5 pos5 pos5 pos5 pos5"
+        "pos6 pos6 pos6 pos6 pos6 pos6"
+        "pos19 pos19 pos19 pos19 pos19 pos19"
+        "pos20 pos20 pos20 pos20 pos20 pos20"
+        "pos21 pos21 pos21 pos21 pos21 pos21"
+        "pos7 pos7 pos7 pos7 pos7 pos7"
+        "pos8 pos8 pos8 pos8 pos8 pos8"
+        "pos9 pos9 pos9 pos9 pos9 pos9"
+        "pos10 pos10 pos10 pos10 pos10 pos10"
+        "pos11 pos11 pos11 pos11 pos11 pos11"
+        "pos12 pos12 pos12 pos12 pos12 pos12"
+        "pos16 pos16 pos16 pos16 pos16 pos16"
+        "pos17 pos17 pos17 pos17 pos17 pos17"
+        "pos18 pos18 pos18 pos18 pos18 pos18"
+        "pos14 pos14 pos14 pos14 pos14 pos14"
+        "f5 f5 f5 f5 f5 f5";
+    }
+    .header{
+        font-size: larger;     
+    }
+    .linkText{
+        font-size: medium;
+    }
+    .thumbUp{
+        height: 25px;
+    }
+    .thumbDown{
+        height: 25px;
+    }
+    .pos6{
+        display: flex;
+        flex-direction: column;
+    }
+    .linkButton{
+        padding: 5px;
+        margin: 5px;
+    }
+    .numberWrongText{
+        margin-top: 20px;
+    }
+    .gameListText{
+        font-size: larger;
+    }
+    .gameListTextHome{
+        font-size: larger;
+    }
+    .gameListGame{
+        font-size: larger;
+    }
+    .questions{
+        padding-top: 30px;
+    }
+} */

@@ -231,7 +231,7 @@ function clearButtonColor() {
         var answerDisplay1 = document.getElementById("answer1"); 
         var answerDisplay2 = document.getElementById("answer2"); 
         var answerDisplay3 = document.getElementById("answer3"); 
-        var answer1 = ' <strong class="answerMimic" id="answerCopy">2022</strong>'; //change answer to match answer1 from above. 
+        var answer1 = ' <strong class="answerMimic" id="answerCopy">2023</strong>'; //change answer to match answer1 from above. 
         var answer2 = ' <strong class="answerMimic" id="answerCopy">2010</strong>'; //change to answer2 from above.
         var answer3 = ' <strong class="answerMimic" id="answerCopy">2000</strong>'; //change to answer3 from above. 
         var answer4 = ' <strong class="answerMimic" id="answerCopy"></strong>'; //leave blank so answer can clear. 

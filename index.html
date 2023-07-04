@@ -3,9 +3,12 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=900">
+    <meta name="viewport" content="width=device-width">
     <meta property="og:image" content="https://i.ibb.co/gFnYkKd/Screen-Shot-2022-11-20-at-8-55-50-PM.png"/>
     <script src="https://kit.fontawesome.com/0f62ced13f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;1,8..144,300&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <title>Trivia Challenge</title>
     <link rel="stylesheet" href="triviaChallenge.css">
 </head>
@@ -38,16 +41,16 @@
         </div>
 
         <div class="item pos4">
-            <img class="headerImage" src="img/TriviaChallenge.png">
+            <img alt="logo" class="headerImage" src="img/TriviaChallenge.png">
         </div>
         <div class="item pos5" id="fewWrong">
-            <img src="img/thumbsDown.png" class="thumbUp"><strong class="linkText">Get as few wrong as possible!</strong><img src="img/GreenCheck.png" class="thumbDown">
+            <img alt="thumbs up" src="img/thumbsDown.png" class="thumbUp"><strong class="linkText">Get as few wrong as possible!</strong><img alt="green check" src="img/GreenCheck.png" class="thumbDown">
             <br>
             <strong class="total">51 questions total.</strong>
         </div>
         <div class="item pos6" id="numWrong">
             <button class="linkButton" onclick="startOverReset()">Start Over</button>
-            <strong class="numberWrongText">Number wrong:</strong><input type="text" value="0" class="numberWrongBox" id="numberWrong" readonly>
+            <strong class="numberWrongText">Number wrong:</strong><input title="total wrong" type="text" value="0" class="numberWrongBox" id="numberWrong" readonly>
         </div>
         <div class="item pos19" id="pos19">
             <p class="areYouSure">Are you sure?</p>
@@ -55,56 +58,56 @@
             <a class="linkButtonRed" onclick="startOverNo()">No</a>
         </div>
         <div class="item pos20" id="timerEnd">
-            <strong class="areYouSure">Question number </strong><input type="text" class="questionNumBox" id="questionNumber" value="1" readonly>
-            <strong class="areYouSure">Timer </strong><input type="text" class="questionNumBox1" id="timerVisable" value="0:0:0" readonly>
+            <strong class="areYouSure">Question number </strong><input title="question number" type="text" class="questionNumBox" id="questionNumber" value="1" readonly>
+            <strong class="areYouSure">Timer </strong><input title="time" type="text" class="questionNumBox1" id="timerVisable" value="0:0:0" readonly>
         </div>
         <div class="item pos21" id="trivquestion">
             <strong class="question">Our current year is </strong><strong class="answerMimic" id="answerCopy"></strong>
         </div>
         <div class="item pos7" id="answercheck1">
-            <label class="box" style="color:black;" onclick="clearButtonColor(); displayAnswer(); clearButton1();">
-    <input type="checkbox" class="checkBox" id="answer1"><strong class="answerText">2022</strong>
+            <label class="box" onclick="clearButtonColor(); displayAnswer(); clearButton1();">
+    <input type="checkbox" class="checkBox" id="answer1"><strong class="answerText">2023</strong>
     <span class="boxInput" id="boxCorrect1"></span>
             </label>
             </div> 
             <div class="item pos8" id="answercheck2">
-                <label class="box" style="color:black;" onclick="clearButtonColor(); displayAnswer(); clearButton2();">
+                <label class="box" onclick="clearButtonColor(); displayAnswer(); clearButton2();">
         <input type="checkbox" class="checkBox" id="answer2"><strong class="answerText">2010</strong>
         <span class="boxInput" id="boxWrong1"></span>
                 </label>
                 </div>
                 <div class="item pos9" id="answercheck3">
-                    <label class="box" style="color:black;" onclick="clearButtonColor(); displayAnswer(); clearButton3();">
+                    <label class="box" onclick="clearButtonColor(); displayAnswer(); clearButton3();">
             <input type="checkbox" class="checkBox" id="answer3"><strong class="answerText">2000</strong>
             <span class="boxInput" id="boxWrong2"></span>
                     </label>
                     </div>
         <div class="item pos10" id="trivbutton">
-            <button class="answerButton" onclick="trivia();">Submit</button>
+            <button type="submit" class="answerButton" onclick="trivia();">Submit</button>
         </div>
         <div class="item pos11" id="trivanswer">
             <p class="questionAnswer" id="triviaAnswer"></p>
         </div>
         <div class="item pos12">
-            <input type="text" class="questionNumBox" id="timer" value="0" readonly>
+            <input title="question" type="text" class="questionNumBox" id="timer" value="0" readonly>
         </div>
         <div class="item pos16">
             <div id="formFill" class="formDisplayBlock itemTrivia">
                 <form id="my-form" action="https://formspree.io/f/mgerqlzr" method="POST">
                 <div class="flexItemItem">
-                    <label><img src="img/Firework.png" class="firework" /><strong class="congrats"> Congratulations on completing the challenge! </strong><img src="img/Firework.png" class="firework" /></label>
+                    <label><img alt="firework" src="img/Firework.png" class="firework" /><strong class="congrats"> Congratulations on completing the challenge! </strong><img alt="firework" src="img/Firework.png" class="firework" /></label>
                 </div>
                 <div class="flexItemItem">
-                    <img src="img/greatJob.png" height="250" width="450" />
+                    <img alt="great job" src="img/greatJob.png" height="250" width="450" />
                 </div>
                 <div class="flexItemItem flex1">
-                    <label><img src="img/DownArrowLeft.png" class="downArrow" /><strong class="fillOut"> Get your name and number wrong on the leader board! </strong><img src="img/DownArrowRight.png" class="downArrow" /></label>
+                    <label><img alt="down arrow" src="img/DownArrowLeft.png" class="downArrow" /><strong class="fillOut"> Get your name and number wrong on the leader board! </strong><img alt="arrow right" src="img/DownArrowRight.png" class="downArrow" /></label>
                 </div>
                 <div class="flexItemItem flex2">
                     <label><strong class="formNumberWrongText">Name you want displayed</strong></label>
                 </div>
                 <div class="flexItemItem flex2">
-                    <input type="text" name="Name" class="formNameBox" maxlength="30">
+                    <input title="name" type="text" name="Name" class="formNameBox" maxlength="30">
                     <br />
                     <strong class="max20Text">(Max 30 characters)</strong>
                 </div>
@@ -112,22 +115,22 @@
                      <label><strong class="formNumberWrongText">Your total number wrong</strong></label>
                 </div>
                  <div class="flexItemItem flex2">
-                    <input type="text" name="Wrong" id="formNumberWrong" class="numberWrongFill" readonly>
+                    <input title="wrong" type="text" name="Wrong" id="formNumberWrong" class="numberWrongFill" readonly>
                 </div>
                 <div class="flexItemItem flex2">
                     <label><strong class="formNumberWrongText">Your total time</strong></label>
                </div>
                 <div class="flexItemItem flex2">
-                   <input type="text" name="Time" id="formNumberTime" class="numberWrongFill" readonly>
+                   <input title="time" type="text" name="Time" id="formNumberTime" class="numberWrongFill" readonly>
                </div>
                 <div class="flexItemItem flex2">
                     <label><strong class="formNumberWrongText">Email</strong></label>
                 </div>
                 <div class="flexItemItem flex2">
-                    <input type="email" name="Email" class="formNameBox" />
+                    <input title="email" type="email" name="Email" class="formNameBox" />
                 </div>
                 <div class="flexItemItem flex2">
-                    <button id="my-form-button" class="formSubmit" onclick="hideForm()">Submit</button>
+                    <button type="reset" id="my-form-button" class="formSubmit" onclick="hideForm()">Submit</button>
                 </div>
                 <div class="flexItemItem flex2">
                     <p id="my-form-status"></p>
@@ -144,9 +147,9 @@
             <audio src="sounds/endTriviaGame.mp4" id="end"></audio>
         </div>
         <div class="item pos15" id="thanksFinnish">
-            <img src="img/arrowCirclePrimary.png" class="arrowCircle"> 
+            <img alt="arrow circle" src="img/arrowCirclePrimary.png" class="arrowCircle"> 
             <strong class="thankYou">Thank You! Your name will post soon! Click below to play again!</strong> 
-            <img src="img/arrowCirclePrimary.png" class="arrowCircle">
+            <img alt="arrow circle" src="img/arrowCirclePrimary.png" class="arrowCircle">
             <br>
             <a href="index.html" class="playAgainReset">Play Again</a>
         </div>

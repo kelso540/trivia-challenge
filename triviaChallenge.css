@@ -51,7 +51,6 @@
 .pos3{
     display: none;
     grid-area: pos3;
-    background-color: rgb(238, 238, 238);
     border-radius: 0 0 10px 10px;
 }
 .pos4{
@@ -299,7 +298,7 @@ input[type=checkbox]{
 }                                                                                                              /**/
 .answerText{
     position: relative;
-    z-index: 2;
+    z-index: 1;
     right: 25px;
     top: 5px;
     font-size: 30px;
@@ -584,7 +583,7 @@ color: rgb(61, 61, 61);
     border-bottom-right-radius: 10px;
     -ms-overflow-style: none;  /* IE and Edge stops scroll bar*/
     scrollbar-width: none;  /* Firefox stops scroll bar*/ 
-    z-index: 2;
+    z-index: 5;
 }
 .hiddenMenu::-webkit-scrollbar { /*hides the scroll bar on selected element.*/
     display: none;
